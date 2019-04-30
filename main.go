@@ -8,4 +8,5 @@ func main() {
 
 func print(s string) {
 	fmt.Println(s)
+	fmt.Println(s)
 }
