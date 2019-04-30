@@ -12,3 +12,14 @@ jobs:
           name: sample job
           command: |
             echo "this is sample"
+
+workflows:
+  version: 2
+  build-and-test:
+    jobs:
+      - test:
+          filters:
+            branches:
+              only: /.*/
+            tags:
+              only: /.*/
