@@ -1,0 +1,14 @@
+version: 2.1
+
+jobs:
+  test:
+    docker:
+      - image: golang
+        environment:
+          TZ: Asia/Tokyo
+    steps:
+      - checkout
+      - run:
+          name: sample job
+          command: |
+            echo "this is sample"
